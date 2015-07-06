@@ -5,6 +5,39 @@
   <script type="text/javascript" src="./global.js"></script>
 </head>
 <body>
-  
+  <h2>What happens if you try to parse the Integer out of a String like "Error 404"? How about "404 Error"? Other combinations of numbers and letters? What needs to be true about the incoming String for it to be parsed correctly?</h2>
+  <p>
+    If a String is entered with letter-characters first, it appears as "NaN", which means "not a number". If numbers are entered before any text characters, then it will parse the numbers up to the beginning of the text. If numeric values exist after the text, they will not appear. For a String to be parsed correctly to an Integer, it must begin with the numeric values.
+  </p>
+
+  <h2>What happens if one (or more) of the inputs are non-numeric text (like a comma or dollar sign)? What errors occur, if any? What does the console output tell you?</h2>
+  <p>
+    No other errors are present, even if multiple types of non-numeric text exist. Instead, the value of the variable is still represented as "NaN".
+  </p>
+
+  <h2>Why might you use the increment (++) or decrement (--) operators? What are some applications that you predict might come into play?</h2>
+  <p>
+    These seem useful, as in Ruby, to do counts on loops. If you need to keep track of how many times a process occurs in the program, these operators would be helpful.
+  </p>
+
+  <h2>What questions do you have?</h2>
+  <p>
+    I'm not super clear on the difference between the increment/decrement operators being to the left or right of a variable.
+  </p>
+  <p>
+    Is there a way to increment without permanently changing the original (incremented) variable?
+  </p>
+
+  <h2>Bonus</h2>
+  <h2>Learn about the compound assignment operators (like += and -=) -- what problem do these solve and how are they used? What are situations where you might use a compound assignment operator instead of simple assignment (with =)? Which is easier to read: x += 2; or x = x + 2;?</h2>
+  <p>
+    Compound operators are used to assign a value to a given variable, in addition to the current value of the variable. It always modifies the value of the variable based on what it's current value currently is, rather than a complete value replacement. This is useful for tracking running amounts of any sort of value, rather than replacing the number entirely each time.
+  </p>
+
+  <h2>Research the Javascript Math Object -- can you get some of these methods to work? I'll recommend Math.pow(), Math.max(), and Math.abs() as starting points.</h2>
+  <p>
+    Looks similar to Ruby's Math module. Can do math operations beyond the basics.
+  </p>
+
 </body>
 </html>
