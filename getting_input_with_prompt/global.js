@@ -15,3 +15,9 @@ console.log("Your name is " + UserName + ".");
 console.log("You are " + UserAge + " years old.");
 console.log("You're from " + UserHometown + ".");
 console.log("Finally, your favorite number is " + UserFavoriteNumber + ".");
+
+// Determine the type of object by inputting it to the console.log()
+console.log(typeof UserName);
+console.log(typeof UserAge);
+console.log(typeof UserHometown);
+console.log(typeof UserFavoriteNumber);

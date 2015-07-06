@@ -4,4 +4,47 @@
   <title>JS Atomic 04</title>
   <script type="text/javascript" src="./global.js"></script>
 </head>
+<body>
+  <h2>What is the data-type (e.g., String or Integer) of the information that comes in? What happens if the user inputs a number -- does it stay an Integer? Use typeof and console.log() to help with this.</h2>
+  <p>
+    Information that comes in from the prompt turns into a String, including Integers.
+  </p>
+
+  <h2>What happens when the user clicks "OK" (or equivalent) without typing anything in? What information gets assigned to a variable, if any?</h2>
+  <p>
+    If the user doesn't delete the default text, but doesn't type anything different in, then the default text is used as the value for the variable. If the user deletes the default text and leaves the entry blank, then the value of the variable turns into an empty String.
+  </p>
+
+  <h2>How did you choose your variable names? If you gave a list of variable names to someone who hasn't seen your code, could they reasonably predict what information you might store in each?</h2>
+  <p>
+    I used CamalCase for naming conventions (not sure if that's correct). Variable names started with "User", to indicate that the user entered the information. The next part of the variable name included the title of the information the user was entering (i.e., UserName).
+  </p>
+
+  <p>
+    I think people would reasonably be able to understand what information is in each of these variables. However, I'm not indicating how the user entered the information (a prompt here). If there are forms, or other ways to get information from the user, this could get confusing.
+  </p>
+
+  <h2>If you completely changed a question you were asking the user, would it make sense to totally rename the variable? What if you changed the order of the questions?</h2>
+  <p>
+    Yes, you would need to rename the variable, but not in its entirety. The "User" part of the variable is still relevant, because the user is inputting the information and the information is *about* the user, but the rest of the variable name would need to change to match the title of the information being entered. This is true of different questions or rearranged ones.
+  </p>
+
+  <h2>In these exercises, we use prompt() to collect information, but most websites that ask for information do not use prompt() -- how do they collect information (what HTML elements do they use)? What might be an advantage to doing it that way instead of with prompt()? Are there any disadvantages? Why might you use prompt()?</h2>
+  <p>
+    Most websites use a form element in html to collect information. An advantage to that could be that a user can easily enter and review several fields of information at once before clicking submit. Another advantage is that validation can be used fairly easily with the form (and there's probably a good way in JavaScript too, but I don't know it yet).
+  </p>
+  <p>
+    A potential disadvantage to the form is that if you only need one field of information, or something quick, a user has to go to a separate page and input it, then submit. Alternatively, the prompt is very quick without needing the user to navigate anywhere. Prompt might be used if it's just for something short and immediate that the website needs from the user.
+  </p>
+
+  <h2>Research prompt() -- is there any way to make it so there are two (or more) fields?</h2>
+  <p>
+    From reading, there is no built-in way to get multiple inputs in a single prompt. You can create a custom function or module that mimics what JavaScript is doing and try to create it on your own, but there is nothing built in.
+  </p>
+
+  <h2>Questions I have:</h2>
+  <p>
+    How on earth is this integrated with HTML? It's all very separate so far, and it's not clicking as to how a form would be used with js (or any html features) in a particular order, or separate files. You wouldn't want all of your JavaScript to just pop up at once when the page is opened. I guess that leads to a second question, which is how do you control the order/pace of JavaScript processes?
+  </p>
+</body>
 </html>
