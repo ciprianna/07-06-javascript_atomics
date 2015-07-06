@@ -1,12 +1,12 @@
 // Variable assignment
 var name = "Calypso";
 var age = 7;
-var hairColor = "Orange";
+var hairColor;
 
 // Change variable values
 name = "Harry";
 age = "16";
-hairColor = "Gray";
+// hairColor = "Gray";
 
 // // Alert statements
 // alert("My name is " + name + ".");

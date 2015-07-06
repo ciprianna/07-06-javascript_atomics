@@ -8,5 +8,39 @@
   <h1>JS Atomic 03</h1>
 
   <h2>Given what you know so far, what are some reasons to use variables?</h2>
+  <p>
+    Variables might be used in the console.log() to store more specific information. They could also be used in an alert to inform the user of a more specific error, or warning, rather than a generic one.
+  </p>
+
+  <h2>What are some advantages to variable names like hairColor instead of hc (for example)? What are some disadvantages?</h2>
+  <p>
+    The advantages of using a more specific name is that a user's experience might be lengthy, and they might accrue several things in a log that the dev can see later. If the names are unspecific, or vague, then it may be harder to tell exactly where a user was at or what was done when the log entry was made without going through all the code and looking for the variable name.
+  </p>
+  <p>
+    A disadvantage may be that the variable names become lengthy over time, particularly if concepts are similar. Namespacing, or specificity to the variable names, may get difficult to remember and lengthy to type out.
+  </p>
+
+  <h2>Given what you know so far, what can you predict about other ways we might use variables?</h2>
+  <p>
+    Variables might be used for mathematical operations, like they can be in Ruby. They can maybe be used to store params information, so they can run processes in functions. They can probably be used to give specificity to warnings/alerts to the user, like we used with @error in Ruby to display an error message with input validation.
+  </p>
+
+  <h2>Why don't you need to use the var keyword every time you use a variable (right now we only use it when we create the variable)? What does var do?</h2>
+  <p>
+    var declares the variable, meaning that you are creating it, and assigning it at the same time. In a function, using var creates a local variable and allows you to assign it within the function. If var is not used, if the variable already exists in the global environment and will re-write over the global variable. Using var declares the variable in the current environment, and allows you to work with it there, instead of potentially creating conflicts other places in the code. If you want to change the value of an already existing variable, then var isn't needed because it's already been declared/created. Without first declaring the variable, you are merely assigning a property, rather than creating a more permanent variable within your program.
+  </p>
+
+  <h2>What happens if you try to do output with a variable without first assigning a value to that variable? What happens? Does the program still work as intended? Do error messages show up in the console? If so, what error message?</h2>
+  <p>
+    If a variable has no value, the program still runs as intended. No error messages show up. The only difference is that instead of showing the value of the variable where the value should be shown in the program, "undefined" appears.
+  </p>
+
+  <h2>My questions:</h2>
+  <p>
+    Variables/naming conventions - must be camal case here?
+  </p>
+  <p>
+    String vs. Integer on the age variable didn't seem to make a difference in appearance. I'm assuming there are differences in operations, just like in Ruby, but I would like to see some use-cases here.
+  </p>
 </body>
 </html>
