@@ -5,6 +5,126 @@
   <script type="text/javascript" src="./global.js"></script>
 </head>
 <body>
-  <h2></h2>
+  <h2>"5 == '5' is " + (5 == '5')</h2>
+  <p>
+    False. I predicted false here because 5 in single quotes will be read as a String, not an Integer. Javascript won't be able to tell that an Integer is equal to a String. The operator checks if the values are equal.
+  </p>
+  <p>
+    The correct answer was true. This is true because JavaScript automatically converted the String to an Integer without telling me. Rude.
+  </p>
+  <h2>"5 == 'five' is " + (5 == 'five')</h2>
+  <p>
+    False. I predicted false here because 'five' is a String, not an Integer. Javascript won't be able to tell that an Integer is equal to a String. The operator checks if the values are equal.
+  </p>
+  <p>
+    Correct answer is indeed false, because JavaScript cannot convert non-numeric text into an Integer.
+  </p>
+  <h2>"5 == '6' is " + (5 == '6') </h2>
+  <p>
+    False. I predicted false here because 'six' is a String, not an Integer. Javascript won't be able to tell that an Integer is equal to a String. The operator checks if the values are equal.
+  </p>
+  <p>
+    Correct answer is false, but not for the reason I assumed. JavaScript converted '6' to an Integer, then compared its value.
+  </p>
+  <h2>"5 === '5' is " + (5 === '5')</h2>
+  <p>
+    False. I predicted false here because 'five' is a String, not an Integer. Javascript won't be able to tell that an Integer is equal to a String. The operator checks if the values are equal AND if the variable type is the same. In this case, the variable type is different.
+  </p>
+  <p>
+    Correct answer is false only because the types are different.
+  </p>
+  <h2>"5 == 2 + 3 is " + (5 == 2 + 3)</h2>
+  <p>
+    True. I predicted true because all values are Integers and it should be able to make a comparison between two Integer values. The operator checks for equality between the value on each side, and the variable type.
+  </p>
+  <p>
+    Correct.
+  </p>
+  <h2>"5 == 5 is " + (5 == 5)</h2>
+  <p>
+    True. I predicted true because the value of each side is the same. This operator just checks for variable value.
+  </p>
+  <p>
+    Correct.
+  </p>
+  <h2>"5 === 5 is " + (5 === 5)</h2>
+  <p>
+    True. I predicted true because the value of each side is the same and both sides are Integers. This operator checks for equality of the value on each side, and if the variable types are the same.
+  </p>
+  <p>
+    Correct.
+  </p>
+  <h2>"true == 'true' is " + (true == 'true')</h2>
+  <p>
+    False. The value of a String is being compared to the value of a Boolean, so they won't be equal. This operator only compares values on each side.
+  </p>
+  <p>
+    False is correct, but I'm not really sure why. Reading suggests 'true' would be converted to a number to be compared to a Boolean (which should never be equal?), so it's false.
+  </p>
+  <h2>"true === 'true' is " + (true === 'true')</h2>
+  <p>
+    False. The value of a String is being compared to the value of a Boolean, so they won't be equal. This operator compares values on each side and type. Both are different.
+  </p>
+  <p>
+    Also false, because the types start off different.
+  </p>
+  <h2>"true == false is " + (true == false)</h2>
+  <p>
+    False. The values of the Booleans being evaluated are different. Operator used only compares values.
+  </p>
+  <p>
+    Correct.
+  </p>
+  <h2>"5 == 12 is " + (5 == 12)</h2>
+  <p>
+    False. The values of the Integers being evaluated are different. Operator used only compares values.
+  </p>
+  <p>
+    Correct.
+  </p>
+  <h2>"5 !== 12 is " + (5 !== 12)</h2>
+  <p>
+    True. The values of the Integers being evaluated are different. Operator used only compares values and asks if the values are different.
+  </p>
+  <p>
+    Correct.
+  </p>
+  <h2>"5 < 12 is " + (5 < 12)</h2>
+  <p>
+    True. The value of the Integer on the left is less than the value of the Integer on the right. Operator used asks if the value on the left is less than the right.
+  </p>
+  <p>
+    Correct.
+  </p>
+  <h2>"5 <= 12 is " + (5 <= 12)</h2>
+  <p>
+    True. The value of the Integer on the left is less than or equal to the value of the Integer on the right. Operator used asks if the value on the left is less than or equal to that on the right.
+  </p>
+  <p>
+    Correct.
+  </p>
+  <h2>"5 > 12 is " + (5 > 12)</h2>
+  <p>
+    False. The value of the Integer on the left is not greater than the value of the Integer on the right. Operator used asks if the value on the left is greater than that on the right.
+  </p>
+  <p>
+    Correct.
+  </p>
+  <h2>"5 >= 12 is " + (5 >= 12)</h2>
+  <p>
+    False. The value of the Integer on the left is not greater than or equal to the value of the Integer on the right. Operator used asks if the value on the left is greater than or equal to that on the right.
+  </p>
+  <p>
+    Correct.
+  </p>
+
+  <h2>What do you call true and false values?</h2>
+  <p>
+    Booleans
+  </p>
+  <h2>How is true dissimilar from "true"? Can they be used the same way?</h2>
+  <p>
+    True converts to 1, whereas "true" converts to NaN, so they are unequal and cannot be used in the same way.
+  </p>
 </body>
 </html>
