@@ -8,35 +8,27 @@ console.log("Start number: " + StartNumber);
 console.log("End number: " + EndNumber);
 
 if (StartNumber < EndNumber) {
-  while (StartNumber <= EndNumber) {
+  for (StartNumber; StartNumber <= EndNumber; StartNumber++) {
     if (StartNumber % 3 == 0 && StartNumber % 5 == 0) {
       console.log("FizzBuzz");
-      StartNumber++;
     } else if (StartNumber % 5 == 0) {
       console.log("Buzz");
-      StartNumber++;
     } else if (StartNumber % 3 == 0) {
       console.log("Fizz");
-      StartNumber++;
     } else {
       console.log(StartNumber);
-      StartNumber++;
     }
   }
 } else {
-  while (StartNumber >= EndNumber) {
+  for (StartNumber; StartNumber >= EndNumber; StartNumber--) {
     if (StartNumber % 3 == 0 && StartNumber % 5 == 0) {
       console.log("FizzBuzz");
-      StartNumber--;
     } else if (StartNumber % 5 == 0) {
       console.log("Buzz");
-      StartNumber--;
     } else if (StartNumber % 3 == 0) {
       console.log("Fizz");
-      StartNumber--;
     } else {
       console.log(StartNumber);
-      StartNumber--;
     }
   }
 }
