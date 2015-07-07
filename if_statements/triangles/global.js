@@ -19,6 +19,9 @@ var GreaterThanTwo = OneAndThree > LegTwo;
 var GreaterThanOne = TwoAndThree > LegOne;
 
 // Output to the console.log()
+console.log(LegOne);
+console.log(LegTwo);
+console.log(LegThree);
 console.log(LegOne + " + " + LegTwo + "= " + OneAndTwo);
 console.log("The sum of Leg 1 and Leg 2 is greater than Leg 3: " + GreaterThanThree);
 console.log(LegOne + " + " + LegThree + "= " + OneAndThree);
