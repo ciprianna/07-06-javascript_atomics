@@ -10,13 +10,11 @@ console.log("Start number: " + StartNumber);
 console.log("End number: " + EndNumber);
 
 if (StartNumber < EndNumber) {
-  while (StartNumber <= EndNumber) {
+  for (StartNumber; StartNumber <= EndNumber; StartNumber += IncrementNumber) {
     console.log(StartNumber);
-    StartNumber += IncrementNumber;
   }
 } else {
-  while (StartNumber >= EndNumber) {
+  for (StartNumber; StartNumber >= EndNumber; StartNumber -= IncrementNumber) {
     console.log(StartNumber);
-    StartNumber -= IncrementNumber;
   }
 }
