@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  <title>JS Atomic 6D</title>
+  <script type="text/javascript" src="./global.js"></script>
+</head>
+<body>
+  <h2>Does it matter what order your if-statements are in?</h2>
+  <p>
+    Yes, it displays the alerts in the order they're written in the document.
+  </p>
+  <h2>When testing ranges, did you use &&, ||, or something else entirely (e.g. nested if-statements)? If you used &&, why is that a better choice than || (and vice-versa)?</h2>
+  <p>
+    I used the && operator to check if the number was within a certain range. It works because it's inclusive, whereas || is an or, meaning one or the other.
+  </p>
+  <h2>What types of input produce a value of NaN after parsing? Is it important to check for NaN values? Is it possible for a NaN value to trigger any of the other if-statements? If so, how and why?</h2>
+  <p>
+    A String will produce NaN after parsing to an Integer. It's important to check for those values for validity to ensure you're thinking through all possible scenarios and allows you to convey an error to the user.
+  </p>
+</body>
+</html>
